@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
     <!-- Fonts -->
+
+     <!-- Boostrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
     <!-- CSS -->
@@ -28,12 +31,33 @@
 
     <!-- Inicio main -->
     <main class="main-container">
-        <nav class="main">
-            <div><a class="link" href="menu.html">MENÚ</a></div>
-            <div><a class="link" href="historia.html">HISTORIA</a></div>
-            <div><a class="link" href="promociones.html">PROMOCIONES</a></div>
-            <div><a class="link" href="zonasDeReparto.html">ZONA DE REPARTO</a></div>
-        </nav>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid main-nav">
+              <a class="navbar-brand" href="#"><img class="logo-navbar" src="../Multimedia/imagenes/logocachete.png" alt="logocachete"></a>
+
+              <button class="navbar-toggler botonmain" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse main-item" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link link" aria-current="page" href="menu.html">MENU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link" href="historia.html">HISTORIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link" href="promociones.html">PROMOCIONES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link" href="zonasDeReparto.html">ZONAS DE REPARTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </main>
     <!-- Final main -->
     
@@ -44,21 +68,27 @@
     <!-- Fin section -->
 
     <!-- Inicio footer -->
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a class="logodecomunicacion-main" href="https://www.facebook.com/CachetePeru/?ref=page_internal"><img class="logosDeComunicacion" src="../Multimedia/imagenes/FB.png"alt="">Cachete Perú</a>
-                </li>
-                <li>
-                    <a class="logodecomunicacion-main" href="https://www.instagram.com/cacheteperu161/"><img class="logosDeComunicacion" src="../Multimedia/imagenes/IG.png" alt="">@cacheteperu161</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="comentario-container">
-            <p class="comentario">¡NADA COMO NUESTRA COMIDA!</p>
+<footer>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand comentario-logodecomunicacion" href="https://www.facebook.com/CachetePeru/">
+            <img src="../Multimedia/imagenes/FB.png" alt="facebook" width="50" height="50" class="d-inline-block align-text-top logosDeComunicacion">
+            CachetePerú
+          </a>
         </div>
-    </footer>
+        <div class="container-fluid">
+            <a class="navbar-brand comentario-logodecomunicacion" href="https://www.instagram.com/cacheteperu161/">
+              <img src="../Multimedia/imagenes/IG.png" alt="instagram" width="50" height="50" class="d-inline-block align-text-top logosDeComunicacion">
+              @cacheteperú161
+            </a>
+          </div>
+      </nav>
+    <div class="comentario-container">
+        <p class="comentario-footer">¡NADA COMO NUESTRA COMIDA!</p>
+    </div>
+</footer>
 <!-- Final footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </body>
 </html>
