@@ -187,9 +187,6 @@ h1{
     transform: scale(2) rotate(360deg);
 }
 .logosDeComunicacion{
-    height: 100px;
-    width: 100px;
-    margin: 100px 0px 100px 0px;
     transition: all;
     transition-duration: 2s;
 }
@@ -203,7 +200,10 @@ h1{
     display: flex;
     justify-content: end;
 }
-.comentario{
+.comentario-logodecomunicacion{
+    color: #f8cc32;
+}
+.comentario-footer{
     display: inline;
     color: #F8CC32;
     border: 2px solid #F8CC32;
