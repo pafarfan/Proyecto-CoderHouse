@@ -165,13 +165,21 @@ h1{
     z-index: 2;
     transition: all 2s;
 }
-.main{
-    display: flex;
-    justify-content: space-around;
+.main-nav{
     font-family: 'Akshar', sans-serif;
+}
+.main-item{
+    display: flex;
 }
 .link{
     color: #F8CC32;
+}
+.botonmain{
+    background-color: #F6F3F3;
+}
+.logo-navbar{
+    height: 50px;
+    width: 70px;
 }
 /* Final main*/
 
