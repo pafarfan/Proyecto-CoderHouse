@@ -53,14 +53,6 @@
 
 /* MENU HTML-INICIO */
 /* Inicio header-menuhtml */
-.menu-container{
-    display: flex;
-    justify-content: center;
-}
-.menu{
-    display: inline;
-    color: #F6F3F3;
-}
 .carta-container{
     display: grid; 
     grid-template-columns: 1fr 1fr;
