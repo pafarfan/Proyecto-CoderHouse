@@ -3,6 +3,15 @@
     margin: 0;
 }
 /* Inicio header*/
+.bienvenido{
+    display: flex;
+    justify-content: center;
+    
+}
+.bienvenido p{
+    color: #F8CC32;
+    font-family: 'Akshar', sans-serif;
+}
 .photo{
     width: 100%;
     display: grid;
@@ -46,10 +55,8 @@
     justify-content: center;
 }
 /* Final video */
-
 /* INDEX.HTML-FINAL */
 
-/* ----------------------------- */
 
 /* MENU HTML-INICIO */
 /* Inicio header-menuhtml */
@@ -57,7 +64,15 @@
     display: grid; 
     grid-template-columns: 1fr 1fr;
 }
+.carta-containermobile{
+    display: flex; 
+    justify-content: center;
+}
 .carta{
+    width: 100%;
+    height: 100%;
+}
+.cartamobile{
     width: 100%;
     height: 100%;
 }
@@ -147,6 +162,9 @@ h1{
 .logo:hover{
     transform:scale(2);
 }
+.lista{
+    list-style: none;
+}
 /* Inicio main*/
 .main-container{
     border: 2px solid #F8CC32;
@@ -166,7 +184,7 @@ h1{
     color: #F8CC32;
 }
 .botonmain{
-    background-color: #F6F3F3;
+    background-color: #F8CC32;
 }
 .logo-navbar{
     height: 50px;
@@ -200,6 +218,56 @@ h1{
     color: #F8CC32;
     border: 2px solid #F8CC32;
 }
+.comentario-containermobile{
+    display: flex;
+    justify-content: center;
+}
+.comentario-footermobile{
+    display: inline;
+    color: #F8CC32;
+    border: 2px solid #F8CC32;
+}
 /* Final footer */
 
+/* Mobile */
+@media screen and (max-width: 600px){
+    .photo{
+        display: none;
+    }
+    .videofb{
+        display: none;
+    }
+    .comentario-container{
+        display: none;
+    }
+    .carta-container{
+        display: none;
+    }
+    .cartamobile{
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) {
+    .bienvenido{
+        display: none;
+    }
+    .comentario-containermobile{
+        display: none;
+    }
+    .comentario-footermobile{
+        display: none;
+    }
+    .carta-containermobile{
+        display: none;
+    }
+}
+/* Mobile */
+
+/* Tablet */
+@media screen and (max-width: 900px){
+    .videofb{
+        display: none;
+    }
+}
+/* Tablet */
 /* CODIGO COMUN-FINAL */
