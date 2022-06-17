@@ -1,122 +1,230 @@
-/* INDEX.HTML-INICIO */
+.main-photo, .bienvenido, .videofb, .carta-containermobile, body .logoh, .comentario-container, .comentario-containermobile {
+  display: flex;
+  justify-content: center; }
+
+.carta-container .carta, .carta-container .cartamobile, .carta-containermobile .cartamobile {
+  width: 100%;
+  height: 100%; }
+
+.comentario-container .comentario-footer, .comentario-containermobile .comentario-footermobile {
+  display: inline;
+  color: #f8cc32;
+  border: 2px dotted #f8cc32;
+  font-family: 'Akshar', sans-serif; }
+
 * {
   margin: 0; }
 
 /* Inicio header*/
-.bienvenido {
-  display: flex;
-  justify-content: center; }
-  .bienvenido p {
-    color: #f8cc32;
-    font-family: 'Akshar', sans-serif; }
-
 .photo {
-  width: 100%;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px; }
+  width: 250px; }
   .photo .logo-main {
     width: 100%;
-    grid-column: 2/3;
     transition: all 2s;
-    z-index: 3;
-    object-fit: cover; }
+    z-index: 3; }
   .photo .logo-main:hover {
-    transform: scale(2); }
-  .photo .mapa {
-    width: 100%;
-    height: 150px;
-    grid-column: 3/4; }
+    transform: scale(1.3); }
+
+.bienvenido p {
+  color: #f8cc32;
+  font-family: 'Akshar', sans-serif; }
 
 /* Fin header*/
 /* Inicio Imagen del medio*/
+.carousel {
+  margin-top: 15px; }
+
 .img-present {
-  height: 500px;
-  object-fit: cover; }
+  height: 500px; }
 
 /* Final Imagen del medio*/
 /* Inicio video */
 .videofb {
+  margin-top: 20px; }
+
+/* Final video */
+.main-photo, .bienvenido, .videofb, .carta-containermobile, body .logoh, .comentario-container, .comentario-containermobile {
   display: flex;
   justify-content: center; }
 
-/* Final video */
-/* INDEX.HTML-FINAL */
-/* MENU HTML-INICIO */
-/* Inicio header-menuhtml */
+.carta-container .carta, .carta-container .cartamobile, .carta-containermobile .cartamobile {
+  width: 100%;
+  height: 100%; }
+
+.comentario-container .comentario-footer, .comentario-containermobile .comentario-footermobile {
+  display: inline;
+  color: #f8cc32;
+  border: 2px dotted #f8cc32;
+  font-family: 'Akshar', sans-serif; }
+
+.menu {
+  background-color: #050505;
+  display: grid;
+  font-family: 'Akshar', sans-serif;
+  grid-template-areas: "hamburguesaT alitasT"              "salchipapasT broasterT" "complementosT bebidasT";
+  justify-content: space-around; }
+  .menu span {
+    margin-top: 15px;
+    color: #f8cc32;
+    font-size: 50px; }
+    .menu span svg {
+      transition: all 2s; }
+    .menu span svg:hover {
+      transform: scale(1.2); }
+  .menu .hamburguesa {
+    grid-area: hamburguesaT; }
+    .menu .hamburguesa .hamburguesa-main {
+      background-color: #f8cc32;
+      border-radius: 12px;
+      margin-top: 10px;
+      height: 60px; }
+    .menu .hamburguesa .parrafo {
+      display: inline; }
+  .menu .alitas {
+    grid-area: alitasT; }
+    .menu .alitas .alitas-img {
+      background-color: #f8cc32;
+      border-radius: 12px;
+      margin-top: 10px;
+      height: 60px; }
+  .menu .salchipapas {
+    grid-area: salchipapasT; }
+    .menu .salchipapas .salchipapas-img {
+      background-color: #f8cc32;
+      border-radius: 12px;
+      margin-top: 10px;
+      height: 60px; }
+  .menu .broaster {
+    grid-area: broasterT; }
+    .menu .broaster .broaster-img {
+      background-color: #f8cc32;
+      border-radius: 12px;
+      margin-top: 10px;
+      height: 60px; }
+  .menu .complementos {
+    grid-area: complementosT; }
+    .menu .complementos .complementos-img {
+      background-color: #f8cc32;
+      border-radius: 12px;
+      margin-top: 10px;
+      height: 60px; }
+  .menu .bebidas {
+    grid-area: bebidasT; }
+    .menu .bebidas .bebidas-img {
+      background-color: #f8cc32;
+      border-radius: 4px;
+      margin-top: 10px;
+      height: 60px; }
+  .menu .titulo-carta::after {
+    background: #f8cc32;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 10px;
+    width: 75%; }
+  .menu .carta-menu {
+    margin-top: 10px;
+    color: #F6F3F3;
+    list-style: none; }
+    .menu .carta-menu .precio {
+      color: #f8cc32;
+      font-size: 33px; }
+  .menu div a {
+    color: #f8cc32; }
+
+hr {
+  color: #F6F3F3;
+  opacity: 1; }
+
 .carta-container {
   display: grid;
   grid-template-columns: 1fr 1fr; }
-  .carta-container .carta {
-    width: 100%;
-    height: 100%; }
-  .carta-container .cartamobile {
-    width: 100%;
-    height: 100%; }
 
-.carta-containermobile {
-  display: flex;
-  justify-content: center; }
-  .carta-containermobile .cartamobile {
-    width: 100%;
-    height: 100%; }
-
-/* Final header-menuhtml */
-/* MENU HTML-FINAL */
-/* ----------------------------- */
-/* HISTORIA HTML-INICIO */
-/* Inicio section-historia */
-.history {
-  display: flex;
-  color: #F6F3F3; }
-
-.producto-container {
-  display: flex;
-  justify-content: center; }
-  .producto-container .producto {
-    width: 500px;
-    height: 500px;
-    transition: all 2s; }
-  .producto-container .producto:hover {
-    transform: rotate(360deg); }
-
-/* Final section-historia */
-/* HISTORIA HTML-FINAL */
-/* ------------------------------ */
-/* CONOCENOS HTML-INICIO */
-/* Inicio section-conocenos */
 .conocenos-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around; }
+  .conocenos-container .card {
+    color: #f8cc32;
+    background-color: #050505; }
+  .conocenos-container .card-body {
+    background-color: #050505; }
+  .conocenos-container .card-img-top {
+    width: 100%; }
+
+.promociones-container {
+  font-family: 'Akshar', sans-serif;
+  justify-content: center; }
+  .promociones-container .promociones {
+    margin-top: 10px;
+    color: #f8cc32;
+    font-size: 25px;
+    text-align: end; }
+  .promociones-container .salchipapas .salchipapas-img {
+    background-color: #f8cc32;
+    border-radius: 12px;
+    margin-top: 10px;
+    height: 60px; }
+  .promociones-container span {
+    margin-top: 15px;
+    color: #f8cc32;
+    font-size: 50px; }
+    .promociones-container span svg {
+      transition: all 2s; }
+    .promociones-container span svg:hover {
+      transform: scale(1.2); }
+  .promociones-container .titulo-carta::after {
+    background: #f8cc32;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 10px;
+    width: 20%; }
+  .promociones-container .carta-menu {
+    margin-top: 10px;
+    color: #F6F3F3;
+    list-style: none; }
+    .promociones-container .carta-menu .precio {
+      color: #f8cc32;
+      font-size: 33px; }
+  .promociones-container div a {
+    font-size: 25px;
+    color: #f8cc32; }
+
+.parrafo-zona {
+  margin-top: 10px; }
+  .parrafo-zona .zona-parrafo {
+    display: flex;
+    justify-content: center;
+    color: #f8cc32;
+    border: 2px solid #f8cc32; }
+
+.mapa-zona {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex; }
+
+.main-photo, .bienvenido, .videofb, .carta-containermobile, body .logoh, .comentario-container, .comentario-containermobile {
   display: flex;
   justify-content: center; }
-  .conocenos-container .conocenos {
-    color: #F6F3F3; }
 
-/* Final section-conocenos */
-/*CONOCENOS HTML-FINAL */
-/* ----------------------------- */
-/* PROMOCIONES HTML-INICIO */
-.promociones {
-  width: 100%; }
+.carta-container .carta, .carta-container .cartamobile, .carta-containermobile .cartamobile {
+  width: 100%;
+  height: 100%; }
 
-/* PROMOCIONES HTML-FINAL */
-/* ------------------------------- */
-/* ZONAS DE REPARTO HTML-INICIO */
-.zona-parrafo {
-  display: flex;
-  justify-content: center;
+.comentario-container .comentario-footer, .comentario-containermobile .comentario-footermobile {
+  display: inline;
   color: #f8cc32;
-  border: 2px solid #f8cc32; }
+  border: 2px dotted #f8cc32;
+  font-family: 'Akshar', sans-serif; }
 
-/* ZONAS DE REPARTO HTML-FINAL */
-/* --------------------------------- */
-/* CODIGO COMUN */
+/*comentario*/
 body {
   background-color: #050505; }
   body h1 {
-    color: #F6F3F3;
-    background-color: #f8cc32;
-    border: 2px solid #F6F3F3;
+    color: #f8cc32;
+    background-color: #050505;
+    border: 2px solid #f8cc32;
     display: flex;
     justify-content: center;
     font-family: 'Akshar', sans-serif; }
@@ -126,7 +234,7 @@ body {
     width: 100px;
     transition: all 1s; }
   body .logo:hover {
-    transform: scale(2); }
+    transform: scale(1.5); }
 
 /* Inicio main*/
 .main-container {
@@ -134,7 +242,7 @@ body {
   background-color: #050505;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 4;
   transition: all 2s; }
   .main-container .main-nav {
     font-family: 'Akshar', sans-serif; }
@@ -143,7 +251,11 @@ body {
   .main-container .botonmain {
     background-color: #f8cc32; }
   .main-container .logo-navbar {
-    width: 70px; }
+    width: 70px;
+    transition: all 2s;
+    z-index: 3; }
+  .main-container .logo-navbar:hover {
+    transform: scale(1.3); }
 
 /* Final main*/
 /* Inicio footer */
@@ -156,20 +268,7 @@ body {
     transform: scale(2) rotate(360deg); }
 
 .comentario-container {
-  display: flex;
-  justify-content: end; }
-  .comentario-container .comentario-footer {
-    display: inline;
-    color: #f8cc32;
-    border: 2px solid #f8cc32; }
-
-.comentario-containermobile {
-  display: flex;
-  justify-content: center; }
-  .comentario-containermobile .comentario-footermobile {
-    display: inline;
-    color: #f8cc32;
-    border: 2px solid #f8cc32; }
+  margin-top: 10px; }
 
 /* Final footer */
 /* Mobile */
@@ -183,6 +282,8 @@ body {
   .carta-container {
     display: none; }
   .cartamobile {
+    display: none; }
+  svg {
     display: none; } }
 
 @media screen and (min-width: 600px) {

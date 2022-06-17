@@ -1,0 +1,16 @@
+@import "./base/colors";
+.conocenos-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    .card{
+        color: nth($colores,2);
+        background-color: nth($colores,1);
+    }
+    .card-body{
+        background-color: nth($colores, 1);
+    }
+    .card-img-top{
+        width: 100%;
+    }
+}

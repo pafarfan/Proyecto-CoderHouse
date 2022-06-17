@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una un restaurante de comida rapida para toda la familia">
+    <meta name="keywords" content="Restaurante, Desarrollo web, Comida rapida">
+    <meta property="og;title" content="CachetePeru">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,21 +21,24 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- CSS -->
 
-    <title>Proyecto Final</title>
+    <title>Proyecto Final CoderHouse</title>
 </head>
 <body>
     <!-- Inicio Header -->
     <header>     
         <h1>Cachete Perú</h1>
+        <nav class="main-photo">
+          <div class="photo">
+              <img class="logo-main" src="Multimedia/imagenes/logocachete.png" alt="Logo cachete Perú">
+          </div>
+      </nav>
+        <!-- Mobile -->
         <nav>
-            <div class="photo">
-                <img class="logo-main" src="Multimedia/imagenes/logocachete.png" alt="Logo cachete Perú">
-                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.0314480310567!2d-77.01137295009502!3d-12.178262191337453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9aff16e1e2f%3A0x1ac84ed2bf6d8cc9!2sCachete%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1651513958329!5m2!1ses-419!2spe"  style="border:0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
             <div class="bienvenido">
               <p>BIENVENIDO A CACHETE PERÚ</p>
             </div>
         </nav>
+        <!-- Mobile -->
     </header>
     <!-- Final Header -->
     <!-- Inicio main -->
@@ -52,9 +58,6 @@
                     <a class="nav-link link" aria-current="page" href="pages/menu.html">MENU</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link" href="pages/historia.html">HISTORIA</a>
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link link" href="pages/promociones.html">PROMOCIONES</a>
                   </li>
                   <li class="nav-item">
@@ -71,7 +74,7 @@
     <!-- Final main -->
 
     <!-- Carousel -->
-    <section>
+    <section class="carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -101,6 +104,12 @@
     </section>
     <!-- Fin del carousel -->
 
+    <!-- COMENTARIO -->
+    <div class="comentario-container">
+      <p class="comentario-footer">¡NADA COMO NUESTRA COMIDA!</p>
+    </div>
+    <!-- COMENTARIO -->
+
     <!-- Inicio Video -->
     <nav>
         <div class="videofb">
@@ -112,28 +121,28 @@
     <!-- Inicio footer -->
     <footer>
         <nav class="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand comentario-logodecomunicacion" href="https://www.facebook.com/CachetePeru/">
-                <img src="Multimedia/imagenes/FB.png" alt="facebook" width="50" height="50" class="d-inline-block align-text-top logosDeComunicacion">
+          <div class="container-fluid">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.0314480310567!2d-77.01137295009502!3d-12.178262191337453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b9aff16e1e2f%3A0x1ac84ed2bf6d8cc9!2sCachete%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1651513958329!5m2!1ses-419!2spe"  style="border:px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="container-fluid">
+            <a class="navbar-brand comentario-logodecomunicacion" href="https://www.facebook.com/CachetePeru/">
+              <img src="Multimedia/imagenes/FB.png" alt="facebook" width="50" height="50" class="d-inline-block align-text-top logosDeComunicacion">
                 CachetePerú
+            </a>
+          </div>
+          <div class="container-fluid">
+              <a class="navbar-brand comentario-logodecomunicacion" href="https://www.instagram.com/cacheteperu161/">
+              <img src="Multimedia/imagenes/IG.png" alt="instagram" width="50" height="50" class="d-inline-block align-text-top logosDeComunicacion">
+                  @cacheteperú161
               </a>
             </div>
-            <div class="container-fluid">
-                <a class="navbar-brand comentario-logodecomunicacion" href="https://www.instagram.com/cacheteperu161/">
-                  <img src="Multimedia/imagenes/IG.png" alt="instagram" width="50" height="50" class="d-inline-block align-text-top logosDeComunicacion">
-                  @cacheteperú161
-                </a>
-              </div>
-          </nav>
+          </div>
+        </nav>
           <!-- Mobile -->
           <div class="comentario-containermobile">
             <p class="comentario-footermobile">¡NADA COMO NUESTRA COMIDA!</p>
         </div>
           <!-- Mobile -->
-
-        <div class="comentario-container">
-            <p class="comentario-footer">¡NADA COMO NUESTRA COMIDA!</p>
-        </div>
     </footer>
 <!-- Final footer -->
 <!-- Script -->

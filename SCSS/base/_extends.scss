@@ -1,0 +1,14 @@
+%contenido{
+    display: flex;
+    justify-content: center;
+}
+%medidas{
+    width: 100%;
+    height: 100%;
+}
+%comentario{
+    display: inline;
+     color: nth($colores, 2);
+     border: 2px dotted nth($colores, 2);
+    font-family: 'Akshar', sans-serif;
+}

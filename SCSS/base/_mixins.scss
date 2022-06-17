@@ -1,0 +1,6 @@
+@mixin valor($bg, $br, $margen, $ancho) {
+    background-color: $bg;
+    border-radius: $br;
+    margin-top: $margen;
+    height:$ancho;
+}

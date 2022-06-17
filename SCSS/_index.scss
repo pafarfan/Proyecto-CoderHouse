@@ -1,0 +1,44 @@
+@import "./base/colors";
+@import "./base/extends";
+*{
+    margin: 0;
+}
+/* Inicio header*/
+.main-photo{
+    @extend %contenido;
+}
+.photo{
+    width: 250px;
+    .logo-main{
+    width: 100%;
+    transition: all 2s;
+    z-index: 3;
+    }
+    .logo-main:hover{
+        transform: scale(1.3);
+    }
+}
+.bienvenido{
+    @extend %contenido;
+    p{
+        color: nth($colores,2 );
+        font-family: 'Akshar', sans-serif; 
+    }
+}
+/* Fin header*/
+
+/* Inicio Imagen del medio*/
+.carousel{
+    margin-top: 15px;
+}
+.img-present{
+    height: 500px;
+}
+/* Final Imagen del medio*/
+
+/* Inicio video */
+.videofb{
+    margin-top: 20px;
+    @extend %contenido;
+}
+/* Final video */
