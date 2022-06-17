@@ -1,0 +1,102 @@
+@import "./base/colors";
+@import "./base/extends";
+@import "./base/mixins";
+.menu{
+    background-color:nth($colores, 1);
+    display: grid;
+    font-family: 'Akshar', sans-serif;
+    grid-template-areas:"hamburguesaT alitasT"             
+                        "salchipapasT broasterT"
+                        "complementosT bebidasT";
+                        justify-content:space-around;
+                        span{
+                            margin-top: 15px;
+                            color: nth($colores, 2);
+                            font-size: 50px;
+                            svg{
+                                transition: all 2s;
+                            }
+                            svg:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                        .hamburguesa{ 
+                            grid-area: hamburguesaT;
+                            .hamburguesa-main{
+                                @include valor(nth($colores,2),12px, 10px, 60px);
+                            }
+                            .parrafo{
+                                display: inline;
+                            }
+                        }
+                        .alitas{
+                            grid-area: alitasT;
+                            .alitas-img{
+                                @include valor(nth($colores,2),12px, 10px, 60px);
+                            }
+                        }
+                        .salchipapas{
+                            grid-area: salchipapasT;
+                            .salchipapas-img{
+                                @include valor(nth($colores,2),12px, 10px, 60px);
+                            }
+                        }
+                         .broaster{
+                            grid-area: broasterT;
+                            .broaster-img{
+                                @include valor(nth($colores,2),12px, 10px, 60px);
+                            }
+                        }
+                        .complementos{
+                            grid-area: complementosT;
+                            .complementos-img{
+                                @include valor(nth($colores,2),12px, 10px, 60px);
+                            }
+                        }
+                        .bebidas{
+                            grid-area: bebidasT;
+                            .bebidas-img{
+                                @include valor(nth($colores,2),4px, 10px, 60px);
+                            }
+                        }
+                        .titulo-carta::after{
+                            background: nth($colores, 2);
+                            content: '';
+                            display: block;
+                            height: 3px;
+                            margin-top: 10px;
+                            width: 75%;
+                        }
+                        .carta-menu{
+                            margin-top: 10px;
+                            color: nth($colores, 3)	;
+                            list-style: none;
+                            .precio{
+                                color: nth($colores, 2);
+                                font-size: 33px;
+                            }
+                        }
+                        div a {
+                            color: nth($colores, 2);
+                        }
+}
+hr{
+    color: nth($colores, 3);
+    opacity: 1;
+}
+.carta-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    .carta{
+        @extend %medidas;
+    }
+    .cartamobile{
+        @extend %medidas;
+    }
+}
+.carta-containermobile{
+    @extend %contenido;
+    .cartamobile{
+        @extend %medidas;
+    }
+}
