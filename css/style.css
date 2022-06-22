@@ -58,13 +58,11 @@
   font-family: 'Akshar', sans-serif; }
 
 .menu {
-  background-color: #050505;
   display: grid;
   font-family: 'Akshar', sans-serif;
   grid-template-areas: "hamburguesaT alitasT"              "salchipapasT broasterT" "complementosT bebidasT";
   justify-content: space-around; }
   .menu span {
-    margin-top: 15px;
     color: #f8cc32;
     font-size: 50px; }
     .menu span svg {
@@ -72,7 +70,8 @@
     .menu span svg:hover {
       transform: scale(1.2); }
   .menu .hamburguesa {
-    grid-area: hamburguesaT; }
+    grid-area: hamburguesaT;
+    justify-content: space-around; }
     .menu .hamburguesa .hamburguesa-main {
       background-color: #f8cc32;
       border-radius: 12px;
@@ -144,6 +143,9 @@ hr {
   margin-top: 10px;
   display: flex;
   justify-content: space-around; }
+  .conocenos-container .card-mobile {
+    color: #f8cc32;
+    background-color: #050505; }
   .conocenos-container .card {
     color: #f8cc32;
     background-color: #050505; }
@@ -219,6 +221,9 @@ hr {
   font-family: 'Akshar', sans-serif; }
 
 /*comentario*/
+.disclaimer {
+  display: none !important; }
+
 body {
   background-color: #050505; }
   body h1 {
@@ -272,6 +277,10 @@ body {
 
 /* Final footer */
 /* Mobile */
+@media screen and (max-width: 315px) {
+  .navbar .container-fluid iframe {
+    display: none; } }
+
 @media screen and (max-width: 600px) {
   .photo {
     display: none; }
@@ -284,7 +293,29 @@ body {
   .cartamobile {
     display: none; }
   svg {
-    display: none; } }
+    display: none; }
+  .card-mobile {
+    display: none; }
+  .menu span {
+    font-size: calc(7vw); }
+  .promociones-container span {
+    font-size: calc(7vw); }
+  .hamburguesa {
+    font-size: calc(5vw); }
+  .alitas {
+    font-size: calc(5vw); }
+  .salchipapas {
+    font-size: calc(5vw); }
+  .broaster {
+    font-size: calc(5vw); }
+  .complementos {
+    font-size: calc(5vw); }
+  .bebidas {
+    font-size: calc(5vw); }
+  .menu .carta-menu .precio {
+    font-size: calc(6vw); }
+  .promociones-container .carta-menu .precio {
+    font-size: calc(6vw); } }
 
 @media screen and (min-width: 600px) {
   .bienvenido {

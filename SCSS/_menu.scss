@@ -2,7 +2,6 @@
 @import "./base/extends";
 @import "./base/mixins";
 .menu{
-    background-color:nth($colores, 1);
     display: grid;
     font-family: 'Akshar', sans-serif;
     grid-template-areas:"hamburguesaT alitasT"             
@@ -10,7 +9,6 @@
                         "complementosT bebidasT";
                         justify-content:space-around;
                         span{
-                            margin-top: 15px;
                             color: nth($colores, 2);
                             font-size: 50px;
                             svg{
@@ -22,6 +20,7 @@
                         }
                         .hamburguesa{ 
                             grid-area: hamburguesaT;
+                            justify-content: space-around;
                             .hamburguesa-main{
                                 @include valor(nth($colores,2),12px, 10px, 60px);
                             }

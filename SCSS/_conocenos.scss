@@ -3,6 +3,10 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
+    .card-mobile{
+        color: nth($colores,2);
+        background-color: nth($colores,1);
+    }
     .card{
         color: nth($colores,2);
         background-color: nth($colores,1);
