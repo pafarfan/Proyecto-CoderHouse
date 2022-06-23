@@ -1,15 +1,14 @@
 @import "./base/colors";
+@import "./base/mixins";
 .parrafo-zona{
     margin-top: 10px;
     .zona-parrafo{
-        display: flex;
-        justify-content: center;
+        @include justifica(flex,center);
         color: nth($colores, 2);
         border: 2px solid nth($colores, 2);
     }
 }
 .mapa-zona{
     margin-top: 10px;
-    justify-content: center;
-    display: flex;
+    @include justifica(flex,center);
 }

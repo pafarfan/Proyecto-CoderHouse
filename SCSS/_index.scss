@@ -1,5 +1,6 @@
 @import "./base/colors";
 @import "./base/extends";
+@import "./base/mixins";
 *{
     margin: 0;
 }
@@ -26,13 +27,23 @@
     }
 }
 /* Fin header*/
-
+.resumen{
+    @include justifica(flex,center);
+    border: double 4px;
+    margin-top: 15px;
+    @include comentario( nth($colores,2), nth($colores,1));
+}
+.resumen p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* Inicio Imagen del medio*/
 .carousel{
     margin-top: 15px;
 }
 .img-present{
-    height: 500px;
+    height: 400px;
+    object-fit: cover;
 }
 /* Final Imagen del medio*/
 
@@ -41,4 +52,8 @@
     margin-top: 20px;
     @extend %contenido;
 }
+.video-mapa{
+    @include justifica(flex,space-around);
+}
+
 /* Final video */

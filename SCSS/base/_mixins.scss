@@ -4,3 +4,17 @@
     margin-top: $margen;
     height:$ancho;
 }
+@mixin comentario ($color, $background,) {
+    color: $color;
+    background-color: $background;    
+}
+@mixin font ($fz){
+    font-size: $fz;
+}
+@mixin vista ($vs){
+    display: $vs;
+}
+@mixin justifica($vis, $jus){
+    display: $vis;
+    justify-content: $jus;
+}

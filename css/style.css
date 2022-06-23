@@ -30,17 +30,34 @@
   font-family: 'Akshar', sans-serif; }
 
 /* Fin header*/
+.resumen {
+  display: flex;
+  justify-content: center;
+  border: double 4px;
+  margin-top: 15px;
+  color: #f8cc32;
+  background-color: #050505; }
+
+.resumen p {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 /* Inicio Imagen del medio*/
 .carousel {
   margin-top: 15px; }
 
 .img-present {
-  height: 500px; }
+  height: 400px;
+  object-fit: cover; }
 
 /* Final Imagen del medio*/
 /* Inicio video */
 .videofb {
   margin-top: 20px; }
+
+.video-mapa {
+  display: flex;
+  justify-content: space-around; }
 
 /* Final video */
 .main-photo, .bienvenido, .videofb, .carta-containermobile, body .logoh, .comentario-container, .comentario-containermobile {
@@ -59,9 +76,9 @@
 
 .menu {
   display: grid;
+  justify-content: space-around;
   font-family: 'Akshar', sans-serif;
-  grid-template-areas: "hamburguesaT alitasT"              "salchipapasT broasterT" "complementosT bebidasT";
-  justify-content: space-around; }
+  grid-template-areas: "hamburguesaT alitasT"              "salchipapasT broasterT" "complementosT bebidasT"; }
   .menu span {
     color: #f8cc32;
     font-size: 50px; }
@@ -152,46 +169,45 @@ hr {
   .conocenos-container .card-body {
     background-color: #050505; }
   .conocenos-container .card-img-top {
-    width: 100%; }
+    height: 250px; }
+
+.resumen-promociones {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-family: 'Akshar', sans-serif;
+  color: #F6F3F3;
+  background-color: #050505; }
 
 .promociones-container {
   font-family: 'Akshar', sans-serif;
-  justify-content: center; }
-  .promociones-container .promociones {
-    margin-top: 10px;
-    color: #f8cc32;
-    font-size: 25px;
-    text-align: end; }
-  .promociones-container .salchipapas .salchipapas-img {
-    background-color: #f8cc32;
-    border-radius: 12px;
-    margin-top: 10px;
-    height: 60px; }
-  .promociones-container span {
-    margin-top: 15px;
-    color: #f8cc32;
-    font-size: 50px; }
-    .promociones-container span svg {
-      transition: all 2s; }
-    .promociones-container span svg:hover {
-      transform: scale(1.2); }
-  .promociones-container .titulo-carta::after {
-    background: #f8cc32;
-    content: '';
-    display: block;
-    height: 3px;
-    margin-top: 10px;
-    width: 20%; }
-  .promociones-container .carta-menu {
-    margin-top: 10px;
-    color: #F6F3F3;
-    list-style: none; }
-    .promociones-container .carta-menu .precio {
-      color: #f8cc32;
-      font-size: 33px; }
+  margin: 10px;
+  border: solid 4px;
+  border-color: #f8cc32; }
+  .promociones-container .accordion-flush .accordion-item .accordion-button {
+    background-color: #050505; }
+  .promociones-container .accordion-button:focus {
+    border-color: #f8cc32;
+    color: #F6F3F3; }
+  .promociones-container .acordion {
+    height: 40px; }
+  .promociones-container .accordion-button {
+    color: #F6F3F3; }
+  .promociones-container .accordion-item {
+    background-color: #050505;
+    color: #F6F3F3; }
+  .promociones-container .accordion-button::after {
+    background-color: #f8cc32; }
   .promociones-container div a {
-    font-size: 25px;
     color: #f8cc32; }
+
+.atencion {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-family: 'Akshar', sans-serif;
+  color: #f8cc32;
+  background-color: #050505; }
 
 .parrafo-zona {
   margin-top: 10px; }
@@ -203,8 +219,8 @@ hr {
 
 .mapa-zona {
   margin-top: 10px;
-  justify-content: center;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
 
 .main-photo, .bienvenido, .videofb, .carta-containermobile, body .logoh, .comentario-container, .comentario-containermobile {
   display: flex;
@@ -261,16 +277,27 @@ body {
     z-index: 3; }
   .main-container .logo-navbar:hover {
     transform: scale(1.3); }
+  .main-container .navbar-expand-lg .navbar-collapse {
+    justify-content: space-around; }
 
 /* Final main*/
 /* Inicio footer */
+.navbar-footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Akshar', sans-serif;
+  margin-top: 35px; }
+
 .comentario-logodecomunicacion {
   color: #f8cc32; }
   .comentario-logodecomunicacion .logosDeComunicacion {
     transition: all;
     transition-duration: 2s; }
   .comentario-logodecomunicacion .logosDeComunicacion:hover {
-    transform: scale(2) rotate(360deg); }
+    transform: rotate(360deg); }
+
+.comentario-logodecomunicacion:hover {
+  color: #f8cc32; }
 
 .comentario-container {
   margin-top: 10px; }

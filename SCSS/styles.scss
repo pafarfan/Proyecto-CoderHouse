@@ -16,8 +16,7 @@ body{
         color: nth($colores, 2);
         background-color:nth($colores, 1);
         border: 2px solid nth($colores, 2);
-        display: flex ;
-        justify-content: center;
+        @include justifica(flex,center);
         font-family: 'Akshar', sans-serif;
     }
     .logoh{
@@ -59,10 +58,18 @@ body{
     .logo-navbar:hover{
         transform: scale(1.3);
     }
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: space-around;
+    }
 }
 /* Final main*/
 
 /* Inicio footer */
+.navbar-footer{
+    @include justifica(flex,space-around);
+    font-family: 'Akshar', sans-serif;
+    margin-top: 35px;
+}
 .comentario-logodecomunicacion{
     color: nth($colores, 2);
     .logosDeComunicacion{
@@ -70,8 +77,11 @@ body{
         transition-duration: 2s;
     }
     .logosDeComunicacion:hover{
-        transform: scale(2) rotate(360deg);
+        transform:rotate(360deg);
     }
+}
+.comentario-logodecomunicacion:hover{
+    color: nth($colores, 2);
 }
 .comentario-container{
     @extend %contenido;
@@ -91,75 +101,75 @@ body{
 /* Mobile */
 @media screen and (max-width: 315px){
     .navbar .container-fluid iframe{
-        display: none;
+        @include vista(none);
     }
 }
 @media screen and (max-width: 600px){
     .photo{
-        display: none;
+        @include vista(none);
     }
     .videofb{
-        display: none;
+        @include vista(none);
     }
     .comentario-container{
-        display: none;
+        @include vista(none);
     }
     .carta-container{
-        display: none;
+        @include vista(none);
     }
     .cartamobile{
-        display: none;
+        @include vista(none);
     }
     svg{
-        display: none;
+        @include vista(none);
     }
     .card-mobile{
-        display: none;
+        @include vista(none);
     }
     .menu span{
-        font-size: calc(7vw);
+        @include font(calc(7vw));
     }
     .promociones-container span{
-        font-size: calc(7vw);
+        @include font(calc(7vw));
     }
     .hamburguesa{
-        font-size: calc(5vw);
+        @include font(calc(5vw));
     }
     .alitas{
-        font-size: calc(5vw);
+        @include font(calc(5vw));
     }
     .salchipapas{
-        font-size: calc(5vw);
+        @include font(calc(5vw));
     }
     .broaster{
-        font-size: calc(5vw);
+        @include font(calc(5vw));
     }
     .complementos{
-        font-size: calc(5vw);
+        @include font(calc(5vw));
     }
     .bebidas{
-        font-size: calc(5vw);
+        @include font(calc(5vw));
     }
     .menu .carta-menu .precio{
-        font-size: calc(6vw);
+        @include font(calc(6vw));
     }
     .promociones-container .carta-menu .precio{
-        font-size: calc(6vw);
+        @include font(calc(6vw));
     }
 
 }
 @media screen and (min-width: 600px) {
     .bienvenido{
-        display: none;
+        @include vista(none);
     }
     .comentario-containermobile{
-        display: none;
+        @include vista(none);
     }
     .comentario-footermobile{
-        display: none;
+        @include vista(none);
     }
     .carta-containermobile{
-        display: none;
+        @include vista(none);
     }
 }
 /* Mobile */
@@ -167,7 +177,7 @@ body{
 /* Tablet */
 @media screen and (max-width: 900px){
     .videofb{
-        display: none;
+        @include vista(none);
     }
 }
 /* Tablet */
